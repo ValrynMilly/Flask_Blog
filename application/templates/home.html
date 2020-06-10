@@ -1,12 +1,12 @@
 {% extends "layout.html" %}
 
 {% block body_content %}
-<h1>Home Page: Just Testing some dummy data for Flask Routing</h1>
+<p>this is a home page</p>
 {% for post in posts %}
 	<div>
 		<h3>{{ post.title }}</h3>
-		<p><b> - First name:</b>{{ post.name.first }}</p>
-		<p><b> - Last name:</b>{{ post.name.last }}</p>
+		<p><b> - First name:</b>{{ post.first_name }}</p>
+		<p><b> - Last name:</b>{{ post.last_name }}</p>
 		<p> -- {{ post.content }}</p>
 	</div>
 {% endfor %}
