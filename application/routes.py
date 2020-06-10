@@ -15,6 +15,11 @@ dummyData = [
 "name": {"first":"Monty", "last":"Python"},
 "title":"Herring",
 "content":"when you have found the shrubbery, you must cut down the mightiest tree in the forest... with... a herring!"
+},
+{
+"name": {"first":"Jules", "last":"Winnfield"},
+"title":"Big Kahuna Burger",
+"content":"Do you know why they call it a royale with cheese? Because of the Metric System? CHECK OUT THE BIG BRAIN ON BRETT"
 }
 ]
 
