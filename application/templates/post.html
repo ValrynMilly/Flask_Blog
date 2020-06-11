@@ -22,5 +22,41 @@
 			</div>
 		{% endif %}
 	</form>
+	
+	<form method='POST' action=''>
+		{{ form.last_name.label }}
+		{{ form.last_name }}
+		{% if form.last_name.errors %}
+			<div class="error">
+				{% for error in form.last_name.errors %}
+					<span>{{ error }}</span>
+				{% endfor %}
+			</div>
+		{% endif %}
+	</form>
+	
+	<form method='POST' action=''>
+		{{ form.title.label }}
+		{{ form.title }}
+		{% if form.title.errors %}
+			<div class="error">
+				{% for error in form.title.errors %}
+					<span>{{ error }}</span>
+				{% endfor %}
+			</div>
+		{% endif %}
+	</form>
+	
+	<form method='POST' action=''>
+		{{ form.content.label }}
+		{{ form.content }}
+		{% if form.content.errors %}
+			<div class="error">
+				{% for error in form.content.errors %}
+					<span>{{ error }}</span>
+				{% endfor %}
+			</div>
+		{% endif %}
+	</form>
 </div>
 {% endblock %}
