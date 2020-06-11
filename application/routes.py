@@ -6,9 +6,8 @@ from application.models import Posts
 from application import app
 from flask import render_template, redirect, url_for, request
 
-
-
 @app.route('/post', methods=['GET', 'POST'])
+@login_required
 def post():
     form = PostForm()
     if form.validate_on_submit():

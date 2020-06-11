@@ -1,6 +1,37 @@
 {% extends "layout.html" %}
 
 {% block body_content %}
-<p>login in to this app</p>
+<h2>login in to this app</h2>
+<div class='form'>
+	<div class='form_group'>
+		{{ form.email.label }}
+		{{ form.email }}
+		{% if form.email.errors %}
+			<div class='error'>
+				{% for error in form.email.errors %}
+					<span>{{ error }}</span>
+				{% endfor %}
+			</div>
+		{% endif %}
+	</div>
+	<br>
+	<div class='form_group'>
+		{{ form.password.label }}
+		{{ form.password }}
+		{% if form.password.errors %}
+			<div class='error'>
+				{% for error in form.password.errors %}
+					<span>{{ error }}</span>
+				{% endfor %}
+			</div>
+		{% endif %}
+	</div>
+	<br>
+	{{ form.remember.label }}
+	{{ form.remember }}
+	<div class='form_group'>
+		{{ form.submit }}
+	</div>
+</div>
 {% endblock%}
 
