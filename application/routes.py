@@ -4,9 +4,8 @@ from application.models import Posts, Users
 from application.forms import PostForm, RegistrationForm, LoginForm, UpdateAccountForm
 from flask_login import login_user, current_user, logout_user, login_required
 
-<<<<<<< HEAD
 @app.route('/post', methods=['GET', 'POST'])
-@login_required
+@app.route('/')
 def post():
     form = PostForm()
     if form.validate_on_submit():
@@ -27,10 +26,6 @@ def post():
     return render_template('post.html', title='Post', form=form)
 
 @app.route('/')
-=======
-
-
->>>>>>> c1a9abc6f250a8c92d56801648151b2f22f1b165
 @app.route('/home')
 @app.route('/')
 def home():
