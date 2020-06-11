@@ -1,6 +1,6 @@
 from flask import render_template, redirect, url_for
 from application import app, db
-from application.forms import PostForm
+from application.forms import PostForm, RegistrationForm
 from application.models import Posts
 from application import app
 from flask import render_template
