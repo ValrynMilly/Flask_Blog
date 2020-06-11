@@ -1,8 +1,7 @@
-{% extends "layout.html" %}
-{% block body_content %}
-	<h1>Register Page</h1>
-	<p>Need an account? Sign up</p>
-	<div class='form'>
+{% extends "layouts.html" %}
+{% block body_content %}	
+	<h2>Need an account? Sign up</h2>
+	<div class='form'>	
 		<form method='POST' action=''>
 			{{ form.hidden_tag() }}
 			<div class='form_group'>
@@ -16,7 +15,7 @@
 					</div>
 				{% endif %}
 				</div>
-
+				<br>
 			<div class='form_group'>
 				{{ form.password.label }}
 				{{ form.password }}
@@ -28,7 +27,7 @@
 					</div>
 				{% endif %}
 				</div>
-				
+				<br>		
 			<div class='form_group'>
 				{{ form.confirm_password.label }}
 				{{ form.confirm_password }}
