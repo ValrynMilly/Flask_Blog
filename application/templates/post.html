@@ -1,15 +1,13 @@
 {% extends "layout.html" %}
 {% block body_content %}
-
-
 {% if posts %}
-    {% for post in posts %}
-        <p>Author: {{ post.author }}</p>
-        <p>Title: {{ post.title }}</p>
-        <p>Content: {{ post.content }}</p>
-    {% endfor %}
+	{% for post in posts %}
+		<p>Author: {{ post.author }}</p>
+		<p>Title: {{ post.title }}</p>
+		<p>Content: {{ post.content }}</p>
+	{% endfor %}
 {% else %}
-    <p>There are no post</p>
+	<p>There are no post</p>
 {% endif %}
 
 <div class="form">
