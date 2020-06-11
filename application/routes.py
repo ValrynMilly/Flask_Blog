@@ -26,6 +26,7 @@ def post():
         print(form.errors)
 
     return render_template('post.html', title='Post', form=form)
+    return render_template("post.html", posts=[])    
 
 @app.route('/')
 @app.route('/home')
