@@ -11,8 +11,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = str(os.getenv('DATABASE_URI'))
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
-bcrypt = Bcrypt(app)
-login_manager =LoginManager(app)
+bcrypt= Bcrypt(app)
+login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
 from application import routes
