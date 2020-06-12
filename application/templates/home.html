@@ -3,6 +3,14 @@
 	<h1>Home Page</h1>
 	<p>Welcome to this web app!</p>
 	<div>
-		<h3>{{ posts.title }}</h3>
+	{% for post in posts %}
+    		<div>
+        	
+			<p>Author: {{ post.first_name }} {{ post.last_name }}</p>
+       			<p>Title: {{ post.title }}</p>
+       			<p>Content: {{ post.content }}</p>
+    		</div>
+<!-- end the for-loop -->
+		{% endfor %}
 	</div>
 {% endblock body_content %}
